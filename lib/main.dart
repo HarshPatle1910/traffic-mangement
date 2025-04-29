@@ -13,7 +13,10 @@ class TrafficManagementApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Traffic Management Dashboard',
       theme: ThemeData(primarySwatch: Colors.blue),
+      debugShowCheckedModeBanner: false,
+      // home: TrafficGaurdPage(),
       home: ResponsiveScaffold(),
+      // home: ReportsExportsScreen(),
     );
   }
 }

@@ -16,25 +16,6 @@ class NavigationSidebar extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // Logo/Header
-          Container(
-            padding: const EdgeInsets.all(16.0),
-            color: Colors.blue.shade700,
-            child: Row(
-              children: [
-                const Icon(Icons.shield, color: Colors.white),
-                const SizedBox(width: 10),
-                const Text(
-                  "ZeexAI",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-          ),
           // Navigation Menu
           Expanded(
             child: ListView(
@@ -42,6 +23,51 @@ class NavigationSidebar extends StatelessWidget {
                 SidebarMenuItem(
                   title: "Dashboard",
                   icon: Icons.dashboard,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Traffic Feed",
+                  icon: Icons.traffic,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Infrastructure Insights",
+                  icon: Icons.insights,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Settings and Integration",
+                  icon: Icons.settings,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Traffic Guard",
+                  icon: Icons.directions_transit_filled,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Smart Signal Control",
+                  icon: Icons.signal_wifi_statusbar_4_bar_outlined,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Traffic Priority Screen",
+                  icon: Icons.low_priority_outlined,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Command Centre Page",
+                  icon: Icons.keyboard_command_key,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "Traffic Violation Monitor",
+                  icon: Icons.screenshot_monitor,
+                  controller: controller,
+                ),
+                SidebarMenuItem(
+                  title: "EV Analytics Dashboard  ",
+                  icon: Icons.ev_station,
                   controller: controller,
                 ),
                 SidebarMenuItem(
@@ -57,11 +83,6 @@ class NavigationSidebar extends StatelessWidget {
                 SidebarMenuItem(
                   title: "Cameras",
                   icon: Icons.camera_alt_sharp,
-                  controller: controller,
-                ),
-                SidebarMenuItem(
-                  title: "Settings",
-                  icon: Icons.settings,
                   controller: controller,
                 ),
               ],
